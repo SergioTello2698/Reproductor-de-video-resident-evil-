@@ -1,0 +1,36 @@
+<!-- Ejemplo con las psudo-clases de css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p:first-child {
+        color: black;
+    }
+    p:last-child {
+        color: aqua;
+    }
+    p:nth-child(2n) {
+        color: blue;
+    }
+    p:nth-child(2n + 1) {
+        color: blueviolet;
+    }
+    p::first-letter{
+        font-size: 20px;
+        color: darkgreen;
+    }
+</style>
+<body>
+    <p>Conejo</p>
+    <p>Gato</p>
+    <p>perro</p>
+    <p>rana</p>
+    <p>zorro</p>
+    <p>vaca</p>
+    <p>tortuga</p>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url('http://fonts.cdnfonts.com/css/zombie');
+body {
+    margin: 0px;
+    font-family: 'Zombie', sans-serif;
+}
+.header {
+    background-color: rgb(0, 10, 7);
+    color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+}
+.header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.login {
+    background: linear-gradient(180deg, rgb(0, 10, 7) 0%, rgb(253, 2, 2) 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container {
+    background-color: rgb(26, 23, 23);
+    border: 2px solid red;
+    border-radius: 40px;
+    color: red;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.login__container label {
+    font-size: 14px;
+}
+.login__container--remember-me {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remember-me a {
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--remember-me a:hover {
+    text-decoration: underline;
+}
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.login__container--social-media > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+.login__container--register {
+    font-size: 14px;
+}
+.login__container--register a {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container--register a:hover {
+    text-decoration: underline;
+}
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid;
+    color: red;
+    outline: none;
+    font-family: 'Zombie', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    height: 50px;
+}
+::placeholder {
+    color: red;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Zombie', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: red
+}
+.footer a {
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.login__container--iniciar-sesion {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+.login__container--iniciar-sesion a {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container--iniciar-sesion a:hover  {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .input::placeholder {
+        color: black;
+    }
+    .login__container--form input{
+        color: black;
+    }
+    .login__container--form button{
+        color: black;
+    }
+    .login__container {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+    }
+    .login__container--remember-me {
+        color: black;
+    }
+    .login__container--remember-me a {
+        color: black;
+    }
+    .login__container--social-media {
+        color: black;
+    }
+    .login__container--register {
+        color: black;
+    }
+    .login__container--register a {
+        color: black;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
